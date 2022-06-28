@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!--View-->
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
+    <string name="privacy_policy">By signing up, you agree to Photo’s Terms of Service and Privacy Policy.</string>
+    <string name="username">Username</string>
+
+    <!--Errors-->
+    <string name="empty_line_error">Please Enter Something!</string>
+    <string name="invalid_username_error">Invalid username!</string>
+
+    <!--Toasts-->
+    <string name="success">Success!</string>
+    <string name="cant_log_in">Can\'t Log In…</string>
+    <string name="cant_register">Can\'t Register…</string>
+
+</resources>

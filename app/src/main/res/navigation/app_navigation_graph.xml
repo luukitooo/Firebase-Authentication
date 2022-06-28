@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/loggedOutFragment">
+
+    <fragment
+        android:id="@+id/loggedOutFragment"
+        android:name="com.example.myapplication.fragment.LoggedOutFragment"
+        android:label="LoggedOutFragment"
+        tools:layout="@layout/fragment_logged_out">
+        <action
+            android:id="@+id/action_loggedOutFragment_to_firstRegisterFragment"
+            app:destination="@id/firstRegisterFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_loggedOutFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstRegisterFragment"
+        android:name="com.example.myapplication.fragment.FirstRegisterFragment"
+        android:label="FirstRegisterFragment"
+        tools:layout="@layout/fragment_register_first">
+        <action
+            android:id="@+id/action_firstRegisterFragment_to_secondRegisterFragment"
+            app:destination="@id/secondRegisterFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondRegisterFragment"
+        android:name="com.example.myapplication.fragment.SecondRegisterFragment"
+        android:label="SecondRegisterFragment"
+        tools:layout="@layout/fragment_register_second">
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_secondRegisterFragment_to_loggedOutFragment"
+            app:destination="@id/loggedOutFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/loggedOutFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.myapplication.fragment.LogInFragment"
+        android:label="LogInFragment"
+        tools:layout="@layout/fragment_log_in" />
+</navigation>

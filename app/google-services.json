@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740173749189",
+    "project_id": "fir-auth-homework",
+    "storage_bucket": "fir-auth-homework.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740173749189:android:90ab5d11328ae63c78c9ac",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740173749189-k165h4f09ri64hp22jlukugkpnm1kt3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeej_Sk77UQLnbWN6E1yxF6AuFKDJraL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740173749189-k165h4f09ri64hp22jlukugkpnm1kt3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
